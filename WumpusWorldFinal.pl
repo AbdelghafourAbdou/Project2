@@ -110,5 +110,5 @@ X1 == X, Y1 == Y, write("Success").
 shootwumpus(room(X1,Y1)):-
 wumpus(room(X,Y)),
 stench(room(X1, Y1)),
-wumpusisdead(1).
+wumpusisdead(1),
 write("Success").
