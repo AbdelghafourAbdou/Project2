@@ -78,7 +78,7 @@ not(pit(room(X,Y))), not(wumpus(room(X,Y))).
 
 checkifsafe(room(X,Y)):-
 room(X,Y),
-not(pit(room(X,Y))), (wumpusdead(1)).
+not(pit(room(X,Y))), (wumpusisdead(1)).
 
 %Here we check if the adjacent rooms are safe or not.
 checkroomontheleft():-
