@@ -4,7 +4,7 @@ wumpus(room(3,2)).
 pit(room(4,2)).
 %The location of the room to be checked for adjacents.
 room((1,1)).
-%indicator of the life status for the wumpus 0 is alive, 1 is dead.
+%indicator of the life status for the wumpus.
 wumpusisdead(0).
 %The starting point of the player.
 startingpoint((2,2)).
@@ -110,5 +110,5 @@ X1 == X, Y1 == Y, write("Success").
 shootwumpus(room(X1,Y1)):-
 wumpus(room(X,Y)),
 stench(room(X1, Y1)),
-wumpusisdead(1),
+wumpusisdead(0),
 write("Success").
